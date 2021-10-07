@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 public class main {
 
-	private static int counter;		//counter fuer die Anzahl der Schritte
+	public static int counter = 0;		//counter fuer die Anzahl der Schritte
 	
 	public static void main(String[] argrs) {
 		int[] zahlen = {56, 2, 6, 4, 7, 1, 77, 52};	//ein Array mit Zahlen
@@ -23,6 +23,8 @@ public class main {
 		}
 		System.out.println("Azahl Schritte " + counter); //Anzahl der benoetigten Schritte wird ausgegeben
 
+		int[] ar = erstelleArr(13);
+		main.ausgabe(ar);
 	}
 	
 	
@@ -50,6 +52,21 @@ public class main {
             }
         }
         return false;	//Wenn keine Zahl im Array mit der gesuchten Zahl uebereinstimmt dann false
+	}
+	
+	
+	public static int[] erstelleArr(int laenge) {
+		int ar[] = new int[laenge];
+		for(int i = 0; i < ar.length; i++)  {
+			ar[i] = i+1;
+		}
+		return ar;
+	}
+	
+	public static void ausgabe(int[] ar) {
+		for(int i = 0; i < ar.length; i++) {
+			System.out.println(ar[i]);
+		}
 	}
 
 }
