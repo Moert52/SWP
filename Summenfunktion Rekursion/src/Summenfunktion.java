@@ -13,15 +13,13 @@ public class Summenfunktion {
 		}
 		
 		
-		//Methode fuer eine iterative Summenfunktion 
+		//Methode fuer eine rekursive Summenfunktion 
 		public static long sum (int zahl) {	
 			if(zahl >= 1) {
 				return zahl+sum(zahl -1);
 			}
-			else {
-				return 0;	
-			}
-	        
+		
+			return 0;	
 		}
 		
 		
