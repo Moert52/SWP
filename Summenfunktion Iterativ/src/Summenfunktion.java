@@ -16,7 +16,7 @@ public class Summenfunktion {
 		//Methode fuer eine iterative Summenfunktion 
 		public static long sum (int zahl) {	
 			long z = 0;
-			for(int i = 1; i <= zahl; i++) {
+			for(int i = zahl; i >= 0; i--) {
 				z += i;
 			}
 			return z;	        

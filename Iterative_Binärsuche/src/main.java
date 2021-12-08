@@ -32,12 +32,12 @@ public class main {
 	public static boolean suche (int zahl, int[] meineListe) {
 		int an = 0;	//Die Indexzahl mit dem angefangen wird
 		int en = meineListe.length - 1;	//Indexzahl mit dem Ende des Arrays
-		
+		int za  = 0;
 		//geht so lange bis an groesser oder gleich wie en ist oder true returniert wird
         while (an <= en) {
         	counter++;		//Counter wird um eins groesser 
         	//Indexzahl die dann abprueft, ob der Array an der Stelle die bestimmte Zahl hat
-            int za = an + (en - an) / 2;	
+            za = (an + en)/ 2;	
 
             //Wenn die Zahl vom Array groesser ist als wie die gesuchte, dann
             if (meineListe[za] > zahl) {
